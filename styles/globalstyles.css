@@ -1,0 +1,161 @@
+body{
+    background-color: white;
+    margin:0;
+}
+
+/* Navbar Styling */
+nav{
+    /* background-color: white; */
+    padding:20px 100px;
+}
+nav p{
+    float:left;
+    margin: 0;
+}
+.navbarLinks{
+   display: flex;
+   justify-content: flex-end;
+   margin: 0 20px;
+}
+.navbarLinks a{
+    float:left;
+    text-decoration: none;
+    margin:0 10px;
+}
+
+
+
+
+#header{
+    /* background-color: white; */
+    /* height:250px; */
+}
+
+.dot{
+    border-radius: 50%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 60%;
+    border-top-right-radius: 90%;
+    /* background-color:aqua; */
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.3;
+    filter: blur(25px);
+}
+.dot1{
+    background-color: rgb(5, 138, 183);
+     top:30px;
+      left:-10px; 
+    height:150px;
+     width: 100px;
+}
+.dot2{
+    background-color: yellow; 
+    top:50px; 
+    right:750px;
+    filter: blur(10px);
+}
+.dot3{
+    background-color: green;
+     top:250px; 
+     right:0px; 
+     /* height: 300px; */
+     filter: blur(30px);
+}
+
+
+#headText{
+    width: 700px;
+    padding:75px 100px;
+}
+
+.button{
+    /* color:white; */
+    background-color: yellow;
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: whitesmoke;
+    color:yellow;
+    /* border-bottom: 5px solid black; */
+}
+
+
+.headSkills{
+    width: 500px;
+    margin: 30px 0;
+}
+.skillsTab{
+    float:left;
+    margin:10px 20px;
+    background-color: rgb(237, 15, 222);
+    padding:8px;
+    border-radius: 8px;
+}
+.headSkills :nth-child(2n){
+    background-color: blueviolet;
+    color:white;
+}
+
+
+/* About ME Section */
+#aboutMe{
+    padding:75px 100px;
+}
+
+
+/* Mobile Size Media Query */
+
+@media (max-width: 1023px){
+
+    nav{
+        width: 100vh;
+        padding:10px 30px;
+    }
+    .navbarLinks{
+    margin:0 40px;
+    }
+
+
+
+
+.dot1{
+    top: 75px;
+    height: 100px;
+    width: 50px;
+    left: -5px;
+}
+.dot2{
+    height: 50px;
+    width: 50px;
+    right: 100px;
+}
+.dot3{
+    top: 500px;
+    right: -30px;
+    width: 150px;
+}
+
+#header{
+    width: 100vh;
+    
+}
+#headText {
+    width: 200px;
+    padding:30px;
+}
+#aboutMe{
+    padding:30px;
+}
+.skillsTab{
+    font-size: xx-small;
+}
+.skillsTab{
+    margin: 0 5px;
+}
+}
