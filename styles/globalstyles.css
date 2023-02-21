@@ -70,7 +70,7 @@ nav p{
 
 
 #headText{
-    width: 700px;
+    width: 60%;
    
 }
 
@@ -112,7 +112,7 @@ nav p{
 }
 
 #aboutText{
-    width: 700px;   
+    width: 60%;   
 }
 
 
@@ -155,7 +155,7 @@ nav p{
     padding:30px;
 }
 #headText {
-    width: 200px;
+    width: 100%;
   
 }
 #aboutMe{
@@ -163,7 +163,7 @@ nav p{
     padding:30px;
 }
 #aboutText{
-    width: 200px;
+    width: 100%;
 }
 .skillsTab{
     font-size: xx-small;
