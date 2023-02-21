@@ -45,27 +45,28 @@ nav p{
     display: inline-block;
     position: absolute;
     opacity: 0.3;
-    filter: blur(25px);
+    
 }
 .dot1{
-    background-color: rgb(5, 138, 183);
+    background-color:#343efb;
      top:30px;
       left:-10px; 
     height:150px;
      width: 100px;
+     filter: blur(30px);
 }
 .dot2{
-    background-color: yellow; 
-    top:50px; 
-    right:750px;
-    filter: blur(10px);
+    background-color: aqua;
+    top: 300px;
+    right: 750px;
+    filter: blur(20px);
 }
 .dot3{
-    background-color: green;
+    background-color: #ef0cef;;
      top:250px; 
-     right:0px; 
+     right:-30px; 
      /* height: 300px; */
-     filter: blur(30px);
+     filter: blur(40px);
 }
 
 
@@ -121,16 +122,6 @@ nav p{
 /* Mobile Size Media Query */
 
 
-/* @media (max-width: 532px){
-    #headText {
-        width: 100%;
-      
-    }
-    #aboutText{
-        width: 100%;
-    }
-} */
-
 @media only screen and (max-width: 768px) {
     nav{
         /* width: 100vh; */
@@ -140,9 +131,6 @@ nav p{
     margin:0 40px;
     }
 
-
-
-
 .dot1{
     top: 75px;
     height: 100px;
@@ -150,9 +138,9 @@ nav p{
     left: -5px;
 }
 .dot2{
-    height: 50px;
-    width: 50px;
-    right: 100px;
+    height: 70px;
+    width: 100px;
+    right: 80px
 }
 .dot3{
     top: 500px;
@@ -164,17 +152,12 @@ nav p{
     /* width: 100vh; */
     padding:30px;
 }
-#headText {
-    /* width: 60%; */
-  
-}
+
 #aboutMe{
     /* width: 100vh; */
     padding:30px;
 }
-/* #aboutText{
-    width: 100%;
-} */
+
 .skillsTab{
     font-size: xx-small;
 }
