@@ -1,6 +1,8 @@
 body{
     background-color: white;
     margin:0;
+    /* width:100vh; */
+    overflow-x: hidden;
 }
 
 /* Navbar Styling */
@@ -29,6 +31,7 @@ nav p{
 #header{
     /* background-color: white; */
     /* height:250px; */
+    padding:75px 100px;
 }
 
 .dot{
@@ -68,7 +71,7 @@ nav p{
 
 #headText{
     width: 700px;
-    padding:75px 100px;
+   
 }
 
 .button{
@@ -108,13 +111,19 @@ nav p{
     padding:75px 100px;
 }
 
+#aboutText{
+    width: 700px;   
+}
+
+
+
 
 /* Mobile Size Media Query */
 
 @media (max-width: 1023px){
 
     nav{
-        width: 100vh;
+        /* width: 100vh; */
         padding:10px 30px;
     }
     .navbarLinks{
@@ -137,20 +146,24 @@ nav p{
 }
 .dot3{
     top: 500px;
-    right: -30px;
+    /* right: -30px; */
     width: 150px;
 }
 
 #header{
-    width: 100vh;
-    
+    /* width: 100vh; */
+    padding:30px;
 }
 #headText {
     width: 200px;
-    padding:30px;
+  
 }
 #aboutMe{
+    /* width: 100vh; */
     padding:30px;
+}
+#aboutText{
+    width: 200px;
 }
 .skillsTab{
     font-size: xx-small;
