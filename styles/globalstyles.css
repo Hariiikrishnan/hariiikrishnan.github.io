@@ -140,10 +140,10 @@ nav p{
 .dot2{
     height: 70px;
     width: 100px;
-    right: 80px
+    right: 20px
 }
 .dot3{
-    top: 500px;
+    top: 1500px;
     /* right: -30px; */
     width: 150px;
 }
