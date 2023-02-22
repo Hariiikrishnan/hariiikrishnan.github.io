@@ -9,6 +9,10 @@
 
     <!-- Css Files -->
     <link rel="stylesheet" href="styles/globalstyles.css">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 
@@ -18,6 +22,7 @@
        <p>Hari</p>
 
 
+       <span class="material-icons menuIcon" style="display: none;">Menu</span>
        <div class="navbarLinks">
        <a href="">Home</a>
        <a href="">About Me</a>
@@ -39,7 +44,7 @@
             <h1>Hari Krishnan</h1>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nam dolore non molestias assumenda nisi ipsa debitis quo distinctio iure. Esse in unde soluta enim possimus laudantium maiores, accusamus aperiam.</p>
-            <button class="button">Contact</button>
+            <button class="button" onclick="hamburgerBtn">Contact</button>
 
             <div class="headSkills">
                 <h3 class="skillsTab">HTML5</h3>
@@ -68,7 +73,14 @@
       
     </section>
 
-    
+        
+    <script>
+        
+            if(screen.width <= 768){
+                document.getElementsByClassName("menuIcon")[0].style.display="inline-block";
+            }
+       
+    </script>
 </body>
 
 </html>

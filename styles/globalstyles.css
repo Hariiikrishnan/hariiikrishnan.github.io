@@ -16,6 +16,13 @@ nav p{
     float:left;
     margin: 0;
 }
+.menuIcon{
+    /* display: none!important; */
+}
+.hamburgershow{
+    display: flex;
+    justify-content: flex-end;
+}
 .navbarLinks{
    display: flex;
    justify-content: flex-end;
@@ -133,6 +140,7 @@ nav p{
         padding:10px 30px;
     }
     .navbarLinks{
+        display: none;
     margin:0 40px;
     }
 
