@@ -5,7 +5,7 @@ body{
     overflow-x: hidden;
 }
 *{
-
+ 
 }
 /* Navbar Styling */
 nav{
@@ -66,7 +66,7 @@ nav p{
 .dot3{
     background-color: #ef0cef;;
      top:250px; 
-     right:-30px; 
+     right:0px; 
      /* height: 300px; */
      filter: blur(40px);
 }
