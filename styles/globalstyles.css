@@ -4,7 +4,9 @@ body{
     /* width:100vh; */
     overflow-x: hidden;
 }
-
+/* *{
+    border:solid red 2px;
+} */
 /* Navbar Styling */
 nav{
     /* background-color: white; */
@@ -91,8 +93,10 @@ nav p{
 
 
 .headSkills{
-    width: 500px;
     margin: 30px 0;
+}
+.secondSkills{
+    width:500px;
 }
 .skillsTab{
     float:left;
@@ -144,7 +148,7 @@ nav p{
 }
 .dot3{
     top: 1500px;
-    /* right: -30px; */
+    right: 0px;
     width: 150px;
 }
 
@@ -163,5 +167,8 @@ nav p{
 }
 .skillsTab{
     margin: 0 5px;
+}
+.secondSkills{
+    width:200px;
 }
 }
