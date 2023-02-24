@@ -7,6 +7,9 @@ body{
 *{
  
 }
+a{
+    text-decoration: none;
+}
 /* Navbar Styling */
 nav{
     /* background-color: white; */
@@ -16,9 +19,7 @@ nav p{
     float:left;
     margin: 0;
 }
-.menuIcon{
-    /* display: none!important; */
-}
+
 .hamburgershow{
     display: flex;
     justify-content: flex-end;
@@ -40,6 +41,7 @@ nav p{
 #header{
     /* background-color: white; */
     /* height:250px; */
+    display: flex;
     padding:75px 100px;
 }
 
@@ -65,10 +67,17 @@ nav p{
      filter: blur(30px);
 }
 .dot2{
-    background-color: aqua;
-    top: 300px;
-    right: 750px;
+    position: absolute;
+    background-color: #ef655d;
+    border-radius: 30%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 90%;
+    top: 90%;
     filter: blur(20px);
+    right: -100px;
+    width: 300px;
+    height: 200px;
 }
 .dot3{
     background-color: #ef0cef;;
@@ -82,6 +91,9 @@ nav p{
 #headText{
     width: 70%;
    
+}
+.headerImg{
+    position: relative;
 }
 
 .button{
@@ -119,6 +131,7 @@ nav p{
 }
 
 
+
 /* About ME Section */
 #aboutMe{
     padding:75px 100px;
@@ -137,13 +150,21 @@ nav p{
 @media only screen and (max-width: 768px) {
     nav{
         /* width: 100vh; */
-        padding:10px 30px;
+        padding:40px;
     }
     .navbarLinks{
         display: none;
     margin:0 40px;
     }
-
+    .menuIcon{
+        display: flex!important;
+        justify-content: flex-end;
+    }
+    .navModal{
+        height: 100vh;
+        background-color: #343efb;
+        display:none;
+    }
 .dot1{
     top: 75px;
     height: 100px;
@@ -151,9 +172,11 @@ nav p{
     left: -5px;
 }
 .dot2{
-    height: 70px;
-    width: 100px;
-    right: 20px
+   
+    height: 100px;
+    width: 200px;
+    right: -4S0px;
+   
 }
 .dot3{
     top: 1500px;
@@ -163,9 +186,14 @@ nav p{
 
 #header{
     /* width: 100vh; */
+    display: inline-block;
     padding:30px;
 }
 
+.headerImg img{
+    height: 160px;
+    margin-top: 50px
+}
 #aboutMe{
     /* width: 100vh; */
     padding:30px;

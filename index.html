@@ -13,16 +13,16 @@
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
 </head>
 <body>
 
-
+    
     <!-- Navbar Section -->
     <nav>
        <p>Hari</p>
-
-
-       <span class="material-icons menuIcon" style="display: none;">Menu</span>
+        <!-- href="">Hari</a> -->
+        <a onclick="hamburgerBtn()"><span class="material-icons menuIcon" style="display: none;">menu</span></a>
        <div class="navbarLinks">
        <a href="">Home</a>
        <a href="">About Me</a>
@@ -30,21 +30,25 @@
        <a href="">Projects</a>
        <a href="">Contact</a>
        </div>
+
+       <!-- <div class="navModal">
+        <h2>Hari</h2>
+       </div> -->
     </nav>
 
     <!-- Head Section  -->
     <section id="header">
         <!-- <span class="dot" style="background-color: black; top:20px; left:50px;"></span> -->
         <span class="dot dot1"></span>
-        <span class="dot dot2"></span>
-        <span class="dot dot3"></span>
+        
+        <!-- <span class="dot dot3"></span> -->
 
         <div id="headText">
             <h1>Hy! I am</h1>
             <h1>Hari Krishnan</h1>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint nam dolore non molestias assumenda nisi ipsa debitis quo distinctio iure. Esse in unde soluta enim possimus laudantium maiores, accusamus aperiam.</p>
-            <button class="button" onclick="hamburgerBtn">Contact</button>
+            <button class="button" onclick="" >Contact</button>
 
             <div class="headSkills">
                 <h3 class="skillsTab">HTML5</h3>
@@ -60,6 +64,13 @@
             </div>           
             
         </div>
+        <div class="headerImg">
+            
+            <img src="images/3d_abstract.png" alt="Header Pic"/>
+            <span class="dot dot2"></span>
+        </div>
+        
+        
     </section>
 
     <section id="aboutMe">
@@ -72,14 +83,15 @@
         </div>
       
     </section>
-
+   
         
     <script>
         
-            if(screen.width <= 768){
-                document.getElementsByClassName("menuIcon")[0].style.display="inline-block";
+           
+            function hamburgerBtn(){
+                document.getElementsByClassName("navModal")[0].style.display="inline-block";
             }
-       
+          
     </script>
 </body>
 
