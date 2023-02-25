@@ -212,7 +212,9 @@ nav p{
     display: inline-block;
     padding:30px;
 }
-
+.headerImg {
+    margin: 100px 0 0;
+}
 .headerImg img{
     height: 200px;
     margin-top: 50px
@@ -236,6 +238,6 @@ nav p{
 }
 .imgWrapper{
     right: -5%;
-    top: -40%;
+    top: -55%;
 }
 }
