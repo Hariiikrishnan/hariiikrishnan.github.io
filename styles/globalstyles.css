@@ -216,11 +216,12 @@ top: -70%;
 #header{
     /* width: 100vh; */
     display: inline-block;
-   
+   padding:0px
 }
 
 .headerImg {
     margin: 100px 0 0;
+    overflow: hidden;
 }
 .headerImg img{
     height: 200px;
@@ -250,6 +251,7 @@ top: -70%;
 .blob2{
     height: 400px;
     top: -28%;
-
+    right: 0%;
+    transform: rotate(100deg);
 }
 }
