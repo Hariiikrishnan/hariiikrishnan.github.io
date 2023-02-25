@@ -42,7 +42,7 @@ nav p{
     /* background-color: white; */
     /* height:250px; */
     display: flex;
-    padding:75px 100px;
+    padding:150px 100px 75px;
 }
 
 .dot{
@@ -86,16 +86,39 @@ nav p{
      /* height: 300px; */
      filter: blur(40px);
 }
+.imgWrapper{
+    /* height: 400px;
+    width: 500px;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+    top:0%;
+    border-radius: 50%;
+    z-index: -1; */
 
+    display: inline-block;
+    position: absolute;
+    right: -5%;
+    top: -73%;
+    /* border-radius: 50%; */
+    z-index: -1;
+    /* padding: 50px 0; */
+    /* height: 1000px; */
+    transform: rotate(180deg);
+
+}
 
 #headText{
-    width: 70%;
+    /* width: 70%; */
    
 }
 .headerImg{
     position: relative;
 }
-
+.headerImg img{
+    height:270px;
+}
 .button{
     /* color:white; */
     background-color: yellow;
@@ -191,7 +214,7 @@ nav p{
 }
 
 .headerImg img{
-    height: 160px;
+    height: 200px;
     margin-top: 50px
 }
 #aboutMe{
@@ -210,5 +233,9 @@ nav p{
 }
 .secondSkills{
     width:200px;
+}
+.imgWrapper{
+    right: -5%;
+    top: -40%;
 }
 }
