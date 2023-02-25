@@ -216,12 +216,15 @@ top: -70%;
 #header{
     /* width: 100vh; */
     display: inline-block;
-   padding:0 30px
+   padding:0px;
 }
-
-.headerImg {
+.headerImg{
+    overflow: hidden;
+}
+#headText {
     margin: 100px 0 0;
     overflow: hidden;
+    padding:0 30px
 }
 .headerImg img{
     height: 200px;
