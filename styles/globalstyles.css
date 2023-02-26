@@ -231,7 +231,7 @@ top: -70%;
     padding:35px 100px;
 }
 .projects{
-    background: url("/images/header.jpg");
+    background: url("../images/header.jpg");
     height: 250px;
     width: 300px;
     background-size: contain;
@@ -318,7 +318,7 @@ top: -70%;
    padding:0px;
 }
 .headerImg{
-    overflow: hidden;
+    overflow: hidden; 
     padding: 10px 15px
 }
 #headText {
