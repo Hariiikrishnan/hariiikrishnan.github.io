@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="styles/globalstyles.css" />
 
     <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+  
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
 
     <!-- Google Fonts -->
@@ -30,9 +32,9 @@
       <p>Hari</p>
       <!-- href="">Hari</a> -->
       <a onclick="hamburgerBtn()"
-        ><span class="material-icons menuIcon" style="display: none"
-          >menu</span
-        ></a
+        ><span class="material-symbols-outlined menuIcon">
+          menu
+          </span></a
       >
       <div class="navbarLinks">
         <a href="">Home</a>
@@ -50,7 +52,6 @@
     <!-- Head Section  -->
     <section id="header">
       <!-- <span class="dot" style="background-color: black; top:20px; left:50px;"></span> -->
-    
 
       <!-- <span class="dot dot3"></span> -->
 
@@ -104,7 +105,7 @@
           />
         </svg>
         <img src="images/3d_abstract.png" alt="Header Pic" />
-       
+
         <!-- <span class="dot dot2"></span> -->
       </div>
     </section>
@@ -122,42 +123,80 @@
       </div>
     </section>
 
-    <section id="skillsSet" >
-        <h2>Technologies I am working with,</h2>
-        <!-- #ebf0f3  -->
-        <div id="skillsWrapper">
-            <div class="skills">
-                <h1 class="skillsCont">R</h1>
-               
-                <h2 class="skillsCont">ReactJs</h2>
-                <p class="skillsCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita fugiat omnis debitis </p>
-                <button class="button learnBtn">Learn More</button>
-            </div>
-            <div class="skills">
-              <h1 class="skillsCont">N</h1>
-             
-              <h2 class="skillsCont">NodeJs</h2>
-              <p class="skillsCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita fugiat omnis debitis </p>
-              <button class="button learnBtn">Learn More</button>
-          </div>
-          <div class="skills">
-            <h1 class="skillsCont">M</h1>
-           
-            <h2 class="skillsCont">MongoDB</h2>
-            <p class="skillsCont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas expedita fugiat omnis debitis </p>
-            <button class="button learnBtn">Learn More</button>
-        </div>
+    <section id="skillsSet">
+      <h2>Technologies I am working with,</h2>
+      <!-- #ebf0f3  -->
+      <div id="skillsWrapper">
+        <div class="skills">
+          <h1 class="skillsCont">R</h1>
 
+          <h2 class="skillsCont">ReactJs</h2>
+          <p class="skillsCont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            expedita fugiat omnis debitis
+          </p>
+          <button class="button learnBtn">Learn More</button>
         </div>
-       
+        <div class="skills">
+          <h1 class="skillsCont">N</h1>
 
+          <h2 class="skillsCont">NodeJs</h2>
+          <p class="skillsCont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            expedita fugiat omnis debitis
+          </p>
+          <button class="button learnBtn">Learn More</button>
+        </div>
+        <div class="skills">
+          <h1 class="skillsCont">M</h1>
+
+          <h2 class="skillsCont">MongoDB</h2>
+          <p class="skillsCont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            expedita fugiat omnis debitis
+          </p>
+          <button class="button learnBtn">Learn More</button>
+        </div>
+      </div>
     </section>
 
+    <section id="projectsSet">
+      <h2>Projects I have done so far,</h2>
+      <div id="projectsWrapper">
+        <div class="projects">
+          <h1 class="hide hiddenTitle">Crushie Moments</h1>
+          <a class="hide hiddenTitle reshare"
+            ><span class="material-symbols-outlined">
+              google_plus_reshare
+            </span></a
+          >
+        </div>
+
+        <div class="projects">
+          <h1 class="hide hiddenTitle">Crushie Moments</h1>
+          <a class="hide hiddenTitle reshare"
+            ><span class="material-symbols-outlined">
+              google_plus_reshare
+            </span></a
+          >
+        </div>
+        <div class="projects">
+          <h1 class="hide hiddenTitle">Crushie Moments</h1>
+          <a class="hide hiddenTitle reshare"
+            ><span class="material-symbols-outlined">
+              google_plus_reshare
+            </span></a
+          >
+        </div>
+      </div>
+    </section>
     <script>
       function hamburgerBtn() {
         document.getElementsByClassName("navModal")[0].style.display =
           "inline-block";
       }
+
+      // document.getElementsByClassName("projects")[0].addEventListener("hover");
     </script>
   </body>
 </html>
