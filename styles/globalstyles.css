@@ -210,6 +210,10 @@ top: -70%;
     align-items: center;
     padding:20px;
 }
+.skillsImg{
+    height:75px;
+    width: 75px;
+}
 .learnBtn{
     width: 140px;
     color: blue;
