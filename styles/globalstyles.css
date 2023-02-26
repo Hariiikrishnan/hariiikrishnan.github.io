@@ -3,10 +3,16 @@ body{
     margin:0;
     /* width:100vh; */
     overflow-x: hidden;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
 }
 *{
  
 }
+h1,h2{
+   
+}
+
 a{
     text-decoration: none;
 }
@@ -59,7 +65,7 @@ nav p{
     
 }
 .dot1{
-    background-color:#343efb;
+    background-color:aqua;
      top:30px;
       left:-10px; 
     height:150px;
@@ -68,7 +74,7 @@ nav p{
 }
 .dot2{
     position: absolute;
-    background-color: #ef655d;
+    background-color: aqua;
     border-radius: 30%;
     border-top-left-radius: 10%;
     border-bottom-left-radius: 30%;
@@ -126,17 +132,20 @@ top: -70%;
     height:270px;
 }
 .button{
-    /* color:white; */
-    background-color: yellow;
-    height: 30px;
-    width: 70px;
+    color:white;
+    background-color:#47a582;
+    height: 35px;
+    width: 100px;
     border: none;
     border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px;
 }
 .button:hover{
     background-color: whitesmoke;
-    color:yellow;
+    color:#47a582;
     /* border-bottom: 5px solid black; */
+    box-shadow: 0 3px 15px #47a582;
 }
 
 
@@ -150,13 +159,15 @@ top: -70%;
 .skillsTab{
     float:left;
     margin:10px 20px;
-    background-color: rgb(237, 15, 222);
+    background-color: #ef655d;
     padding:8px;
     border-radius: 8px;
+    color:white;
 }
 .headSkills :nth-child(2n){
-    background-color: blueviolet;
-    color:white;
+    background-color: #A2A9BC;
+    color:black;
+    
 }
 
 
@@ -172,6 +183,48 @@ top: -70%;
 
 
 
+
+
+/* Skills Section  */
+
+#skillsSet{
+    padding:35px 100px;
+}
+#skillsWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin:40px 0;
+}
+.skills{
+
+    width: 210px;
+    height: 240px;
+    border-radius: 16px;
+   
+    background-color: rgba(227,236,247,.40);
+    backdrop-filter: blur(200px);
+    box-shadow: 0px 3px 10px #949496;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.learnBtn{
+    width: 140px;
+    color: blue;
+    background-color: white;
+    font-weight: bolder;
+}
+.learnBtn:hover{
+    color:rgb(128, 128, 220);
+    background-color: white;
+    outline: solid blue 2px;
+    box-shadow: none;
+}
+.skillsCont {
+    opacity: 1 !important;
+}
 
 /* Mobile Size Media Query */
 
@@ -248,8 +301,9 @@ top: -70%;
     width:200px;
 }
 .imgWrapper{
-    right: -5%;
-    top: -55%;
+    right: 0%;
+    top: -50%;
+    height: 400px
 }
 .blob2{
     height: 400px;
@@ -257,4 +311,16 @@ top: -70%;
     right: 0%;
     transform: rotate(100deg);
 }
+#skillsWrapper{
+    flex-direction: column;
+    height: 1000px;
+    align-items: center;
 }
+#skillsSet{
+    padding:0 30px;
+}
+
+}
+/* *{
+    background-color:#f59f9a;
+} */
