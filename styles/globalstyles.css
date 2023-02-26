@@ -254,6 +254,9 @@ top: -70%;
    color:whitesmoke;
    justify-content: flex-end;
    align-items: center;
+   transition:  0.5s;
+    opacity: 1;
+    margin: 40px 20px;
 }
 .hiddenTitle{
     display: flex!important;
@@ -261,7 +264,8 @@ top: -70%;
     color: whitesmoke;
     justify-content: flex-end;
     align-items: center;
-    margin: 40px 20px;
+    margin: 30px 20px;
+    opacity: 0.2;
 }
 .reshare{
      /* background-color: #949496; */
