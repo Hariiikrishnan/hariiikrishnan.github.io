@@ -169,8 +169,17 @@ top: -70%;
     color:black;
     
 }
-
-
+.bullHornAsset{
+    position: absolute;
+    left: -35%;
+    bottom: -35%
+}
+.heartsAsset{
+    height: 100px!important;
+    position: absolute;
+    top: -40%;
+    left: 80%;
+}
 
 /* About ME Section */
 #aboutMe{
@@ -197,8 +206,8 @@ top: -70%;
 }
 .skills{
 
-    width: 210px;
-    height: 240px;
+    width: 230px;
+    height: 280px;
     border-radius: 16px;
    
     background-color: rgba(227,236,247,.40);
@@ -226,9 +235,9 @@ top: -70%;
     outline: solid blue 2px;
     box-shadow: none;
 }
-.skillsCont {
+/* .skillsCont {
     opacity: 1 !important;
-}
+} */
 
 /* Projects Section  */
 #projectsSet{
@@ -386,6 +395,14 @@ top: -70%;
 }
 .hiddenTitle{
     margin: 20px;
+}
+.bullHornAsset{
+    left: -15%;
+    bottom: -15%
+}
+.heartsAsset{
+    top: -20%;
+    height: 50px!important;
 }
 }
 /* *{
