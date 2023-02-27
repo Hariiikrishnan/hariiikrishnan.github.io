@@ -175,11 +175,34 @@ top: -70%;
     bottom: -35%
 }
 .heartsAsset{
-    height: 100px!important;
-    position: absolute;
-    top: -40%;
-    left: 80%;
+    height: 80px!important;
+    position:
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    absolute;
+    top: -30%;
+    right: 0%;
 }
+.starAsset{
+    position: absolute;
+    height: 75px!important;
+    bottom: 0%;
+    right: 0%;
+    transform: rotate(300deg);
+}
+
 
 /* About ME Section */
 #aboutMe{
@@ -189,8 +212,19 @@ top: -70%;
 #aboutText{
     width: 70%;   
 }
-
-
+.aboutImg{
+    display: flex;
+}
+.ideaAsset{
+    height: 200px;
+}
+.aboutImg hr{
+    /* width: 200px; */
+    color: black;
+    border: solid black 1px;
+    border-radius: 10px;
+    transform: rotate(90deg);
+}
 
 
 
@@ -201,7 +235,7 @@ top: -70%;
 }
 #skillsWrapper,#projectsWrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin:40px 0;
 }
 .skills{
@@ -289,6 +323,46 @@ top: -70%;
     border-radius: 8px;
     align-items: flex-end;  */
 }
+
+
+
+
+/* Contact Me Section  */
+
+#contact{
+    padding: 35px 100px;
+}
+#contactWrapper{
+    display: flex;
+    justify-content: center;
+}
+.contactText{
+    height: 300px;
+    background: whitesmoke;
+    border-radius: 16px;
+    width: 700px;
+}
+.contactInfo{
+    display: flex;
+}
+.contactInfo img{
+    height: 100px;
+}
+.contactInfo p{
+    margin: 40px 0;
+    font-weight: bolder;
+}
+.gmail img{
+    height: 80px;
+}
+.gmail p{
+    margin: 40px 20px;
+}
+
+
+
+
+
 /* Mobile Size Media Query */
 
 
@@ -344,8 +418,8 @@ top: -70%;
     padding:0 30px
 }
 .headerImg img{
-    height: 200px;
-    margin-top: 50px
+   height: 170px;
+    margin-top: 90px
 }
 #aboutMe{
     /* width: 100vh; */
@@ -365,15 +439,15 @@ top: -70%;
     width:200px;
 }
 .imgWrapper{
-    right: 0%;
-    top: -50%;
-    height: 400px
+  right: 0%;
+    top: -30%;
+    height: 350px;
 }
 .blob2{
-    height: 400px;
-    top: -28%;
-    right: 0%;
-    transform: rotate(100deg);
+   height: 350px;
+    top: -10%;
+    right: 10%;
+    transform: rotate(100deg)
 }
 #skillsWrapper,#projectsWrapper{
     flex-direction: column;
@@ -403,6 +477,11 @@ top: -70%;
 .heartsAsset{
     top: -20%;
     height: 50px!important;
+}
+.starAsset{
+    height: 55px!important;
+    right: 5%;
+    bottom: 5%
 }
 }
 /* *{
