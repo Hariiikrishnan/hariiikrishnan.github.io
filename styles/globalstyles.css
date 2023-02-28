@@ -40,7 +40,9 @@ nav p{
     text-decoration: none;
     margin:0 10px;
 }
-
+.menuIcon{
+    display: none!important;
+}
 
 
 
@@ -128,7 +130,7 @@ top: -70%;
     position: relative;
     margin-top: 50px;
 }
-.headerImg img{
+.abstractImg{
     height:270px;
 }
 .button{
@@ -171,27 +173,13 @@ top: -70%;
 }
 .bullHornAsset{
     position: absolute;
-    left: -35%;
-    bottom: -35%
+    left: -25%;
+    bottom: -10%;
+    height: 190px
 }
 .heartsAsset{
-    height: 80px!important;
-    position:
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    absolute;
+    height: 70px!important;
+    position: absolute;
     top: -30%;
     right: 0%;
 }
@@ -205,12 +193,19 @@ top: -70%;
 
 
 /* About ME Section */
-#aboutMe{
+#aboutSet{
     padding:75px 100px;
+}
+#aboutMe{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 #aboutText{
-    width: 70%;   
+    width: 50%;   
+   
 }
 .aboutImg{
     display: flex;
@@ -218,12 +213,12 @@ top: -70%;
 .ideaAsset{
     height: 200px;
 }
-.aboutImg hr{
-    /* width: 200px; */
-    color: black;
-    border: solid black 1px;
-    border-radius: 10px;
-    transform: rotate(90deg);
+.arrowIcon{
+    font-size: xxx-large!important;
+    font-weight: bolder!important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -410,22 +405,34 @@ top: -70%;
 }
 .headerImg{
     overflow: hidden; 
-    padding: 10px 15px
+    padding: 10px 15px;
+    margin: 0;
 }
 #headText {
     margin: 50px 0 0;
     overflow: hidden;
     padding:0 30px
 }
-.headerImg img{
+.abstractImg{
    height: 170px;
     margin-top: 90px
 }
-#aboutMe{
-    /* width: 100vh; */
+#aboutSet{
     padding:30px;
 }
-
+#aboutMe{
+    /* width: 100vh; */
+    flex-direction: column-reverse;
+}
+#aboutText{
+    width: 100%;
+}
+.ideaAsset{
+    height: 150px;
+}
+.lady1{
+    height: 130px;
+}
 .skillsTab{
     font-size: xx-small;
 }
@@ -439,7 +446,7 @@ top: -70%;
     width:200px;
 }
 .imgWrapper{
-  right: 0%;
+  right: 5%;
     top: -30%;
     height: 350px;
 }
@@ -472,15 +479,16 @@ top: -70%;
 }
 .bullHornAsset{
     left: -15%;
-    bottom: -15%
+    bottom: -20%;
 }
 .heartsAsset{
-    top: -20%;
+    top: 10%;
+    right: 10%;
     height: 50px!important;
 }
 .starAsset{
-    height: 55px!important;
-    right: 5%;
+    height: 50px!important;
+    right: 10%;
     bottom: 5%
 }
 }
