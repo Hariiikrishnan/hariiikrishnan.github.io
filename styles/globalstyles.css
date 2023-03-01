@@ -253,7 +253,10 @@ top: -70%;
     width: 75px;
 }
 .learnBtn{
-    width: 140px;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    height: 15px;
     color: blue;
     background-color: white;
     font-weight: bolder;
@@ -327,33 +330,54 @@ top: -70%;
 #contact{
     padding: 35px 100px;
 }
-#contactWrapper{
-    display: flex;
+#contactSection{
+    display:flex;
     justify-content: center;
 }
-.contactText{
-    height: 300px;
+#contactWrapper{
+    display: flex;
+    justify-content: space-between;
     background: whitesmoke;
     border-radius: 16px;
-    width: 700px;
+   
+    border: solid rgb(110, 91, 91) 2px;
+}
+.contactText{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 10px;
 }
 .contactInfo{
     display: flex;
 }
 .contactInfo img{
-    height: 100px;
+    height: 75px;
 }
 .contactInfo p{
-    margin: 40px 0;
+    display: flex;
+    align-items: center;
     font-weight: bolder;
 }
 .gmail img{
     height: 80px;
 }
 .gmail p{
-    margin: 40px 20px;
+    /* margin: 40px 20px; */
 }
-
+.contactImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7a3434;
+    padding: 20px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+.contactImg img{
+    height: 160px;
+}
 
 
 
@@ -467,7 +491,7 @@ top: -70%;
 .hide{
     font-size: 1rem;
 }
-#projectsSet,#skillsSet{
+#projectsSet,#skillsSet,#contact{
     padding:0 30px;
 }
 .projects{
@@ -490,6 +514,14 @@ top: -70%;
     height: 50px!important;
     right: 10%;
     bottom: 5%
+}
+#contactWrapper{
+    flex-direction: column-reverse;
+}
+.contactImg{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 0;
 }
 }
 /* *{
