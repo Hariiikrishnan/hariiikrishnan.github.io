@@ -230,7 +230,7 @@ top: -70%;
 }
 #skillsWrapper,#projectsWrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin:40px 0;
 }
 .skills{
@@ -276,13 +276,24 @@ top: -70%;
     padding:35px 100px;
 }
 .projects{
-    background: url("../images/header.jpg");
+   
     height: 250px;
     width: 300px;
-    background-size: contain;
-    /* background-size: cover; */
+    background-size: cover!important;
+    /* background-size: contain; */
     border-radius: 16px;
     display: flex;
+}
+.crushie{
+    background: url("../images/thumbnail1.jpg");
+    background-position: 50% 10%;
+}
+.dwd{
+    background: url("../images/thumbnail2.jpg");
+    background-position: 50% 10%;
+}
+.projects span,h1{
+    color:whitesmoke;
 }
 .projects .hide{
   visibility: hidden;
@@ -296,17 +307,16 @@ top: -70%;
 .projects:hover  .hide{
     visibility: visible;
    display: flex;
-   color:whitesmoke;
    justify-content: flex-end;
    align-items: center;
-   transition:  0.5s;
+   transition: 0.5s;
     opacity: 1;
     margin: 40px 20px;
 }
 .hiddenTitle{
     display: flex!important;
     flex-direction: column;
-    color: whitesmoke;
+   
     justify-content: flex-end;
     align-items: center;
     margin: 30px 20px;
@@ -482,12 +492,13 @@ top: -70%;
 }
 #skillsWrapper,#projectsWrapper{
     flex-direction: column;
-    height: 1000px;
+    /* height: 1000px; */
     align-items: center;
 }
-#projectsWrapper{
-    height: 700px;
+#skillsWrapper .skills,#projectsWrapper .projects{
+    margin-top: 20px;
 }
+
 .hide{
     font-size: 1rem;
 }
