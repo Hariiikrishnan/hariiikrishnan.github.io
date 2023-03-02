@@ -292,9 +292,16 @@ top: -70%;
     background: url("../images/thumbnail2.jpg");
     background-position: 50% 10%;
 }
-.projects span,h1{
-    color:whitesmoke;
+.projects span{
+    color:black;
+    font-weight: bold;
 }
+.projects h1{
+    /* background: linear-gradient(to right, #000000,#000000,white, whitesmoke);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; */
+            color: whitesmoke;
+        }
 .projects .hide{
   visibility: hidden;
 }
