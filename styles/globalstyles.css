@@ -141,19 +141,23 @@ nav p {
 .button:hover {
   background-color: whitesmoke;
   color: #47a582;
-  /* border-bottom: 5px solid black; */
+  
   box-shadow: 0 3px 15px #47a582;
 }
 
-.headSkills {
-  margin: 30px 0;
+ .headSkills {
+  display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 40px 0 0 0;
 }
-.secondSkills {
-  width: 500px;
-}
+ .secondSkills {
+  margin: 0;
+  width: 220px!important;
+}  
+
+
 .skillsTab {
-  float: left;
-  margin: 10px 20px;
   background-color: #ef655d;
   padding: 8px;
   border-radius: 8px;
@@ -325,7 +329,6 @@ nav p {
   background: whitesmoke;
   border-radius: 16px;
 
-  border: solid rgb(110, 91, 91) 2px;
 }
 .contactText {
   display: flex;
@@ -354,10 +357,11 @@ nav p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #7a3434;
+  background-color: white;
   padding: 20px;
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
+  border: dashed rgb(110, 91, 91) 2px;
 }
 .contactImg img {
   height: 160px;
@@ -435,18 +439,19 @@ nav p {
   .lady1 {
     height: 130px;
   }
+ 
   .skillsTab {
-    font-size: xx-small;
+    font-size:0.8rem;
   }
-  .skillsTab {
+  /* .skillsTab {
     margin: 0 5px;
-  }
+  } */
   .headSkills {
     width: 250px;
   }
-  .secondSkills {
+  /* .secondSkills {
     width: 200px;
-  }
+  } */
   .imgWrapper {
     right: 5%;
     top: -30%;
