@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hk Potfolio</title>
+    <title>HK Potfolio</title>
 
     <!-- Css Files -->
     <link rel="stylesheet" href="styles/globalstyles.css" />
@@ -50,7 +50,7 @@
   <body>
     <!-- Navbar Section -->
     <nav>
-      <p>Hari</p>
+      <p>HK</p>
       <!-- href="">Hari</a> -->
       <a onclick="hamburgerBtn()"
         ><span class="material-symbols-outlined menuIcon"> menu </span></a
@@ -69,6 +69,7 @@
     <!-- Head Section  -->
     <section id="header">
       <span class="dot dot1" ></span>
+      <span class="dot dot4" ></span>
 
       <div id="headText">
         <h1>Hy! I am</h1>
@@ -263,7 +264,7 @@
       </div>
     </section>
     <section id="footer">
-      <h2>Follow Me on,</h2>
+      <h2>Follow Me On</h2>
       <div class="sm-icons">
         <a href="https://instagram.com/an_innocent_fool?igshid=YmMyMTA2M2Y="><img alt="Instagram Icon" src="images/instagram-logo.png"/></a>
         <a href="https://www.facebook.com/profile.php?id=100090657527772"><img alt="Facebook Icon" src="images/facebook-logo.png"/></a>
@@ -282,34 +283,18 @@
       }
 
       
-      urls=["images/3d_abstract.png" ,"images/business-idea.png","images/developer_male.jpg","images/react.png","images/java-script.png","images/mongodb.png","images/mongodb.png","images/helpdesk.png" ]
-      function preloadImages(urls, allImagesLoadedCallback){
-    var loadedCounter = 0;
-  var toBeLoadedNumber = urls.length;
-  urls.forEach(function(url){
-    preloadImage(url, function(){
-        loadedCounter++;
-            console.log('Number of loaded images: ' + loadedCounter);
-      if(loadedCounter == toBeLoadedNumber){
-        allImagesLoadedCallback();
-      }
-    });
-  });
-  function preloadImage(url, anImageLoadedCallback){
-      var img = new Image();
-      img.onload = anImageLoadedCallback;
-      img.src = url;
-  }
+      images=["images/3d_abstract.png" ,"images/business-idea.png","images/developer_male.jpg","images/react.png","images/java-script.png","images/mongodb.png","images/mongodb.png","images/helpdesk.png" ]
+      function MM_preloadImages() { //v3.0
+    var d=document; 
+    if(d.images){ 
+        if(!d.MM_p) d.MM_p=new Array();
+         var i,j=d.MM_p.length,a=MM_preloadImages.arguments; 
+         for(i=0; i<a.length; i++)
+             if (a[i].indexOf("#")!=0) { 
+                 d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];
+             }
+    }
 }
-
-// Let's call it:
-preloadImages([
-    '//upload.wikimedia.org/wikipedia/commons/d/da/Internet2.jpg',
-  '//www.csee.umbc.edu/wp-content/uploads/2011/08/www.jpg'
-], function(){
-    console.log('All images were loaded');
-});
-
 
       // document.getElementsByClassName("projects")[0].addEventListener("hover");
     </script>
