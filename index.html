@@ -14,14 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    
 
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
 
@@ -53,14 +46,23 @@
       <p>HK</p>
       <!-- href="">Hari</a> -->
       <a onclick="hamburgerBtn()"
-        ><span class="material-symbols-outlined menuIcon"> menu </span></a
+        class="menuIcon"><span class="material-symbols-outlined "> menu </span></a
       >
       <div class="navbarLinks">
-        <a href="/">Home</a>
-        <a href="#aboutSet">About Me</a>
-        <a href="#skillsSet">Skill Sets</a>
-        <a href="#projectsSet">Projects</a>
-        <a href="#contact">Contact</a>
+        <button onclick="hideHamburgerMenu()"><span class="material-symbols-outlined">
+          cancel
+          </span></button>
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="#aboutSet">About Me</a></li>
+          <li>  <a href="#skillsSet">Skill Sets</a></li>
+          <li> <a href="#projectsSet">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+       
+        
+      
+   
       </div>
 
      
@@ -277,10 +279,16 @@
         <p>Developed by <a  href="https://instagram.com/an_innocent_fool?igshid=YmMyMTA2M2Y=">HK</a></p>
       </div>
     </section>
+    
     <script>
       function hamburgerBtn() {
-        console.log("called")
+        // console.log("called")
+        document.getElementsByClassName("navbarLinks")[0].classList.add("mobileSideBar")
       }
+      function hideHamburgerMenu(){
+        document.getElementsByClassName("navbarLinks")[0].classList.remove("mobileSideBar")
+      }
+    
 
       
       images=["images/3d_abstract.png" ,"images/business-idea.png","images/developer_male.jpg","images/react.png","images/java-script.png","images/mongodb.png","images/mongodb.png","images/helpdesk.png" ]
