@@ -48,6 +48,7 @@ nav p {
   /* height:250px; */
   display: flex;
   padding: 120px 100px 75px;
+  position: relative;
 }
 
 .dot {
@@ -55,33 +56,30 @@ nav p {
   border-top-left-radius: 30%;
   border-bottom-left-radius: 60%;
   border-top-right-radius: 90%;
-  /* background-color:aqua; */
-  height: 100px;
-  width: 100px;
   display: inline-block;
   position: absolute;
   opacity: 0.3;
 }
 .dot1 {
   background-color: aqua;
-  top: 30px;
-  left: -10px;
+  top: 10%;
+  left: 0%;
   height: 150px;
   width: 100px;
   filter: blur(30px);
 }
 .dot2 {
   position: absolute;
-  background-color: aqua;
-  border-radius: 30%;
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 30%;
+  background-color: #a2a9bc;
+  border-radius: 10%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 8%;
   border-top-right-radius: 90%;
-  top: 90%;
-  filter: blur(20px);
-  right: -100px;
-  width: 300px;
-  height: 200px;
+  top: 45%;
+  right: -5%;
+  filter: blur(40px);
+  width: 200px;
+  height: 170px
 }
 .dot3 {
   background-color: #ef0cef;
@@ -104,7 +102,7 @@ nav p {
   display: inline-block;
   position: absolute;
   right: -5%;
-  top: -85%;
+  top: -75%;
   /* border-radius: 50%; */
   z-index: -1;
   /* padding: 50px 0; */
@@ -112,7 +110,7 @@ nav p {
   transform: rotate(185deg);
 }
 .blob2 {
-  top: -70%;
+  top: -60%;
   z-index: -1;
   transform: rotate(110deg);
   height: 600px;
@@ -153,7 +151,7 @@ nav p {
 }
  .secondSkills {
   margin: 0;
-  width: 220px!important;
+  width: 260px!important;
 }  
 
 
@@ -218,7 +216,7 @@ nav p {
 /* Skills Section  */
 
 #skillsSet {
-  padding: 35px 100px;
+  padding:45px 100px;
 }
 #skillsWrapper,
 #projectsWrapper {
@@ -265,7 +263,7 @@ nav p {
 
 /* Projects Section  */
 #projectsSet {
-  padding: 35px 100px;
+  padding: 45px 100px;
 }
 .projects {
   height: 250px;
@@ -317,7 +315,7 @@ nav p {
 /* Contact Me Section  */
 
 #contact {
-  padding: 35px 100px;
+  padding: 45px 100px;
 }
 #contactSection {
   display: flex;
@@ -367,12 +365,29 @@ nav p {
   height: 160px;
 }
 
+
+/* Footer Section */
+#footer{
+  padding: 35px 100px 0 35px;
+  text-align: center;
+}
+.sm-icons{
+  text-align: center;
+}
+.sm-icons img{
+  height: 40px;
+  width: 40px;
+}
+
+.footerSection{
+  margin: 50px 0 0 0;
+}
 /* Mobile Size Media Query */
 
 @media only screen and (max-width: 768px) {
   nav {
     /* width: 100vh; */
-    padding: 40px;
+    padding: 40px 40px 0 40px;
   }
   .navbarLinks {
     display: none;
@@ -388,15 +403,12 @@ nav p {
     display: none;
   }
   .dot1 {
-    top: 75px;
-    height: 100px;
-    width: 50px;
-    left: -5px;
+    left: -8%;
+    top: 5%;
   }
   .dot2 {
-    height: 100px;
-    width: 200px;
-    right: -40px;
+    right: 0%;
+    top: 70%;
   }
   .dot3 {
     top: 1500px;
@@ -449,9 +461,9 @@ nav p {
   .headSkills {
     width: 250px;
   }
-  /* .secondSkills {
-    width: 200px;
-  } */
+  .secondSkills {
+    width: 220px!important;
+  }  
   .imgWrapper {
     right: 5%;
     top: -30%;
@@ -479,8 +491,8 @@ nav p {
   }
   #projectsSet,
   #skillsSet,
-  #contact {
-    padding: 0 30px;
+  #contact ,#footer{
+    padding: 20px 30px;
   }
   .projects {
     height: 200px;
