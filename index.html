@@ -34,18 +34,18 @@
     />
 
     <!-- Preloading contents -->
-    <link rel="preload" as="image" href="images/3d_abstract.png" />
+    <!-- <link rel="preload" as="image" href="images/3d_abstract.png" />
     <link rel="preload" as="image" href="images/business-idea.png" />
     <link rel="preload" as="image" href="images/developer_male.jpg" />
     <link rel="preload" as="image" href="images/react.png" />
     <link rel="preload" as="image" href="images/java-script.png" />
     <link rel="preload" as="image" href="images/mongodb.png" />
-    <link rel="preload" as="image" href="images/helpdesk.png" />
-    <link
+    <link rel="preload" as="image" href="images/helpdesk.png" /> -->
+    <!-- <link
       rel="preload"
-      as="text"
+      as="image"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+    /> -->
   </head>
   <body>
     <!-- Navbar Section -->
@@ -278,9 +278,38 @@
     </section>
     <script>
       function hamburgerBtn() {
-        document.getElementsByClassName("navModal")[0].style.display =
-          "inline-block";
+        console.log("called")
       }
+
+      
+      urls=["images/3d_abstract.png" ,"images/business-idea.png","images/developer_male.jpg","images/react.png","images/java-script.png","images/mongodb.png","images/mongodb.png","images/helpdesk.png" ]
+      function preloadImages(urls, allImagesLoadedCallback){
+    var loadedCounter = 0;
+  var toBeLoadedNumber = urls.length;
+  urls.forEach(function(url){
+    preloadImage(url, function(){
+        loadedCounter++;
+            console.log('Number of loaded images: ' + loadedCounter);
+      if(loadedCounter == toBeLoadedNumber){
+        allImagesLoadedCallback();
+      }
+    });
+  });
+  function preloadImage(url, anImageLoadedCallback){
+      var img = new Image();
+      img.onload = anImageLoadedCallback;
+      img.src = url;
+  }
+}
+
+// Let's call it:
+preloadImages([
+    '//upload.wikimedia.org/wikipedia/commons/d/da/Internet2.jpg',
+  '//www.csee.umbc.edu/wp-content/uploads/2011/08/www.jpg'
+], function(){
+    console.log('All images were loaded');
+});
+
 
       // document.getElementsByClassName("projects")[0].addEventListener("hover");
     </script>

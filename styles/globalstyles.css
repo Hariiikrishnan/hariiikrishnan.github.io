@@ -410,7 +410,7 @@ nav p {
   }
   .dot2 {
     top: 0%;
-    filter: blur(20px);
+    filter: blur(30px);
   }
   .dot3 {
     top: 1500px;
