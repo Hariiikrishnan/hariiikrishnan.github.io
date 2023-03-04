@@ -75,8 +75,8 @@ nav p {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 8%;
   border-top-right-radius: 90%;
-  top: 45%;
-  right: -5%;
+  top: 35%;
+  right: 0%;
   filter: blur(40px);
   width: 200px;
   height: 170px
@@ -188,6 +188,7 @@ nav p {
 /* About ME Section */
 #aboutSet {
   padding: 75px 100px;
+  position: relative;
 }
 #aboutMe {
   display: flex;
@@ -343,13 +344,14 @@ nav p {
 .contactInfo p {
   display: flex;
   align-items: center;
+  
   font-weight: bolder;
 }
 .gmail img {
   height: 80px;
 }
 .gmail p {
-  /* margin: 40px 20px; */
+  font-size: small;
 }
 .contactImg {
   display: flex;
@@ -407,8 +409,7 @@ nav p {
     top: 5%;
   }
   .dot2 {
-    right: 0%;
-    top: 70%;
+    top: 0%;
   }
   .dot3 {
     top: 1500px;
