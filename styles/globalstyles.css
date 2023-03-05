@@ -35,7 +35,7 @@ nav p {
 .navbarLinks ul {
   display: flex;
 }
-.navbarLinks button{
+.cancelBtn{
   display: none;
 }
 .navbarLinks ul li{
@@ -475,12 +475,18 @@ padding: 10px;
   .navbarLinks ul li{
     margin: 50px 0;
   }
-  .navbarLinks ul li a {
-    color: #2200ff;
-    font-weight: bolder;
-  
+  .navbarLinks ul li button {
+    
+    background: none;
+    border: none;
   }
-  .mobileSideBar button{
+  .navbarLinks ul li button a{
+    color: #2200ff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .cancelBtn{
     display: inline-block;
     background: none;
     border: none;
@@ -491,7 +497,7 @@ padding: 10px;
     bottom: 30%;
     
   }
-  .mobileSideBar button span{
+  .cancelBtn span{
     font-size: 3rem;
     font-weight:bolder;
   }
