@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"  />
     <title>HK Potfolio</title>
 
     <!-- Css Files -->
@@ -19,13 +19,9 @@
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kaushan+Script&family=Lexend&family=Satisfy&display=swap" rel="stylesheet">
     <!-- Preloading contents -->
     <!-- <link rel="preload" as="image" href="images/3d_abstract.png" />
     <link rel="preload" as="image" href="images/business-idea.png" />
@@ -43,7 +39,7 @@
   <body>
     <!-- Navbar Section -->
     <nav>
-      <p>HK</p>
+     <a href="#header"><p>HK</p></a> 
       <!-- href="">Hari</a> -->
       <a onclick="hamburgerBtn()"
         class="menuIcon"><span class="material-symbols-outlined "> menu </span></a
@@ -53,7 +49,7 @@
           cancel
           </span></button>
         <ul>
-          <li><button onclick="hideHamburgerMenu()"><a href="/" >Home</a></button></li>
+          <li><button onclick="hideHamburgerMenu()"><a href="#header" >Home</a></button></li>
           <li><button  onclick="hideHamburgerMenu()"><a href="#aboutSet">About Me</a></button></li>
           <li>  <button  onclick="hideHamburgerMenu()"><a href="#skillsSet">Skill Sets</a></button></li>
           <li> <button  onclick="hideHamburgerMenu()"><a href="#projectsSet">Projects</a></button></li>
@@ -75,10 +71,10 @@
 
       <div id="headText">
         <h1>Hy! I am</h1>
-        <h1>Hari Krishnan</h1>
+        <h1 style="color: #03bf7a;">Hari Krishnan !</h1>
 
         <p>
-          I do build websites and web applications here.
+          A Freelance Developer who build websites and web applications. I am using the current trend MERN stack to build Web-Applications.
         </p>
         <a class="button" href="#contact">Hire Me</a>
 
@@ -97,7 +93,7 @@
       </div>
       <div class="headerImg">
         <!-- <span class="imgWrapper"></span> -->
-        <img alt="Hearts Png" class="heartsAsset" src="images/hearts.png" />
+        <img alt="Hearts Png" class="heartsAsset" src="images/hearts_11zo.png" />
         <img
           alt="Bull Horn Png"
           class="bullHornAsset"
@@ -144,22 +140,21 @@
       <div id="aboutMe">
         <div id="aboutText">
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            doloremque, alias ipsam odit officia quod eos? Accusamus ut maxime
-            id vitae iste similique nesciunt porro, quia cum ab incidunt
-            praesentium.
+            Hit me up with your innovative startup ideas.
+            I am more interested in developing startup web applications.
+            Looking forward to build your startup together.
           </p>
         </div>
         <div class="aboutImg">
           <img
-            src="images/business-idea.png"
+            src="images/business-idea.jpg"
             class="ideaAsset lady1"
             alt="Imagining and Idea Photo"
           />
           <!-- <hr /> -->
           <span class="material-symbols-outlined arrowIcon">trending_flat</span>
           <img
-            src="images/developer_male.jpg"
+            src="images/developer-male.jpg"
             class="ideaAsset"
             alt="Developing Photo"
           />
@@ -178,8 +173,7 @@
 
           <h2 class="skillsCont">ReactJs</h2>
           <p class="skillsCont">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            expedita fugiat omnis debitis
+            ReactJS is an open-source javascript library designed by facebook to create single page web or mobile applications.
           </p>
           <a class="button learnBtn" href="https://reactjs.org/">Learn More</a>
         </div>
@@ -192,8 +186,7 @@
           />
           <h2 class="skillsCont">NodeJs</h2>
           <p class="skillsCont">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            expedita fugiat omnis debitis
+            Node.js is a back-end JavaScript runtime environment and executes JavaScript code outside a web browser. 
           </p>
           <a class="button learnBtn" href="https://nodejs.org/">Learn More</a>
         </div>
@@ -203,8 +196,7 @@
 
           <h2 class="skillsCont">MongoDB</h2>
           <p class="skillsCont">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            expedita fugiat omnis debitis
+            MongoDB is a cross-platform document-oriented database program.MongoDB uses JSON-like documents with optional schemas.
           </p>
           <a class="button learnBtn" href="https://www.mongodb.com/"
             >Learn More</a
@@ -244,13 +236,12 @@
       </div>
     </section>
     <section id="contact">
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <div id="contactSection">
         <div id="contactWrapper">
           <div class="contactText">
             <div class="contactInfo">
-              <img alt="Phone Png" src="images/call.png" />
-              <p>+91 9384926154</p>
+              <p>Feel Free To Ping Me</p>
             </div>
             <div class="contactInfo gmail">
               <img alt="email Png" src="images/gmail.png" />

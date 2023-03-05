@@ -1,3 +1,6 @@
+
+/* Global Styling */
+
 body {
   background-color: white;
   margin: 0;
@@ -10,11 +13,22 @@ body {
 }
 h1,
 h2 {
+ 
 }
-
+p{
+  font-family: 'Lexend', sans-serif;
+}
 a {
   text-decoration: none;
 }
+
+#header p, #aboutSet p{
+  line-height: 25px;
+}
+
+
+
+
 /* Navbar Styling */
 nav {
   /* background-color: white; */
@@ -24,6 +38,7 @@ nav p {
   line-height: 10px;
   font-size: 24px;
   float: left;
+  color: #865DFF;
   font-weight: bold;
 }
 
@@ -141,16 +156,6 @@ nav p {
 
 }
 .imgWrapper {
-  /* height: 400px;
-    width: 500px;
-    background-color: red;
-    display: inline-block;
-    position: absolute;
-    right: 15%;
-    top:0%;
-    border-radius: 50%;
-    z-index: -1; */
-
   display: inline-block;
   position: absolute;
   right: -5%;
@@ -178,7 +183,7 @@ nav p {
 .abstractImg {
   height: 270px;
 }
-.button {
+#header .button {
   color: white;
   background-color: #47a582;
   height: 35px;
@@ -187,11 +192,11 @@ nav p {
   border-radius: 10px;
   font-size: 1rem;
   padding: 10px;
+  font-family: 'Lexend', sans-serif;
 }
-.button:hover {
+#header .button:hover {
   background-color: whitesmoke;
   color: #47a582;
-  
   box-shadow: 0 3px 15px #47a582;
 }
 
@@ -291,7 +296,10 @@ nav p {
   align-items: center;
   padding: 20px;
 }
-.skillsImg {
+.skills h2{
+  color:#EB455F;
+}
+.skillsImg{
   height: 75px;
   width: 75px;
 }
@@ -299,10 +307,12 @@ nav p {
   display: flex;
   width: 100px;
   justify-content: center;
+  padding: 10px;
   height: 15px;
   color: blue;
   background-color: white;
   font-weight: bolder;
+  border-radius: 10px;
 }
 .learnBtn:hover {
   color: rgb(128, 128, 220);
@@ -389,6 +399,7 @@ nav p {
 }
 .contactInfo {
   display: flex;
+  justify-content: center;
 }
 .contactInfo img {
   height: 75px;
@@ -462,7 +473,6 @@ padding: 10px;
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.4);
-    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     top: 0%;
     left: 0%;
@@ -498,7 +508,7 @@ padding: 10px;
     margin-top: 60px;
     color: #1a1a1c;
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     
   }
   .cancelBtn span{
@@ -510,7 +520,8 @@ padding: 10px;
     justify-content: flex-end;
   }
   .menuIcon span {
-    margin: 10px;
+    margin: 15px;
+    color: #865DFF;
     font-weight: bolder;
   }
   .navModal {
