@@ -37,6 +37,8 @@ nav p {
 }
 .cancelBtn{
   display: none;
+  background: none;
+  border: none;
 }
 .navbarLinks ul li{
   font-weight: bolder;
@@ -63,6 +65,17 @@ nav p {
 .navbarLinks ul li:hover::after{
   transform: scaleX(1);
   transform-origin: left;
+}
+.navbarLinks ul li button {
+    
+  background: none;
+  border: none;
+}
+.navbarLinks ul li button a{
+  color: #2200ff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 .menuIcon {
   display: none;
@@ -475,21 +488,10 @@ padding: 10px;
   .navbarLinks ul li{
     margin: 50px 0;
   }
-  .navbarLinks ul li button {
-    
-    background: none;
-    border: none;
-  }
-  .navbarLinks ul li button a{
-    color: #2200ff;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
+
+ 
   .cancelBtn{
     display: inline-block;
-    background: none;
-    border: none;
     height: 50px;
     margin-top: 60px;
     color: #1a1a1c;
