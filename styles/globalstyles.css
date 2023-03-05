@@ -454,7 +454,7 @@ padding: 10px;
   }
   .navbarLinks{
     transform: translate(100%);
-    display:none;
+    /* display:none; */
   }
   .mobileSideBar {
     display: flex;
@@ -510,6 +510,7 @@ padding: 10px;
     justify-content: flex-end;
   }
   .menuIcon span {
+    margin: 10px;
     font-weight: bolder;
   }
   .navModal {
