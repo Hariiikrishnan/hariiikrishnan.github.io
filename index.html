@@ -39,7 +39,7 @@
   <body>
     <!-- Navbar Section -->
     <nav>
-      <div class="navHeader"> <a href="#header"><p>HK</p></a> 
+      <div class="navHeader"> <a href="#"><p>HK</p></a> 
    
         <a onclick="hamburgerBtn()"
           class="menuIcon"><span class="material-symbols-outlined "> menu </span></a
@@ -50,7 +50,7 @@
           cancel
           </span></button>
         <ul>
-          <li><button onclick="hideHamburgerMenu()"><a href="#header" >Home</a></button></li>
+          <li><button onclick="hideHamburgerMenu()"><a href="#" >Home</a></button></li>
           <li><button  onclick="hideHamburgerMenu()"><a href="#aboutSet">About Me</a></button></li>
           <li>  <button  onclick="hideHamburgerMenu()"><a href="#skillsSet">Skill Sets</a></button></li>
           <li> <button  onclick="hideHamburgerMenu()"><a href="#projectsSet">Projects</a></button></li>
@@ -165,6 +165,8 @@
    
 
     <section id="skillsSet">
+      <span class="dot dot5" ></span>
+
       <h2>Technologies I am working with,</h2>
       <!-- #ebf0f3  -->
       <div id="skillsWrapper">
@@ -176,7 +178,7 @@
           <p class="skillsCont">
             ReactJS is an open-source javascript library designed by facebook to create single page web or mobile applications.
           </p>
-          <a class="button learnBtn" href="https://reactjs.org/">Learn More</a>
+          <a class="button learnBtn" target="_blank" ref="no" href="https://reactjs.org/">Learn More</a>
         </div>
         <div class="skills">
           <!-- <h1 class="skillsCont">N</h1> -->
@@ -189,7 +191,7 @@
           <p class="skillsCont">
             Node.js is a back-end JavaScript runtime environment and executes JavaScript code outside a web browser. 
           </p>
-          <a class="button learnBtn" href="https://nodejs.org/">Learn More</a>
+          <a class="button learnBtn"  target="_blank" ref="no" href="https://nodejs.org/">Learn More</a>
         </div>
         <div class="skills">
           <!-- <h1 class="skillsCont">M</h1> -->
@@ -199,14 +201,16 @@
           <p class="skillsCont">
             MongoDB is a cross-platform document-oriented database program.MongoDB uses JSON-like documents with optional schemas.
           </p>
-          <a class="button learnBtn" href="https://www.mongodb.com/"
+          <a class="button learnBtn"  target="_blank" ref="no" href="https://www.mongodb.com/"
             >Learn More</a
           >
         </div>
       </div>
+      
     </section>
 
     <section id="projectsSet">
+
       <h2>Projects I have done so far,</h2>
       <div id="projectsWrapper">
         <div class="projects crushie">

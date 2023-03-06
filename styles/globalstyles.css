@@ -10,7 +10,9 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 * {
+  scroll-behavior: smooth;
 }
+
 h1,
 h2 {
  
@@ -156,6 +158,19 @@ nav p {
   height: 170px;
 
 }
+.dot5{
+  position: absolute;
+  background-color: #16FF00;
+  border-radius: 10%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 8%;
+  border-top-right-radius: 90%;
+  bottom: -5%;
+  right: 0%;
+  filter: blur(50px);
+  width: 300px;
+  height: 170px;
+}
 .imgWrapper {
   display: inline-block;
   position: absolute;
@@ -276,6 +291,7 @@ nav p {
 
 #skillsSet {
   padding:45px 100px;
+  position: relative;
 }
 #skillsWrapper,
 #projectsWrapper {
@@ -328,6 +344,7 @@ nav p {
 /* Projects Section  */
 #projectsSet {
   padding: 45px 100px;
+  
 }
 .projects {
   height: 250px;
@@ -412,7 +429,7 @@ nav p {
   font-weight: bolder;
 }
 .gmail img {
-  height: 80px;
+  height: 50px;
 }
 .gmail p {
   font-size: small;
@@ -558,8 +575,13 @@ padding: 10px;
     height: 200px;
     width: 150px;
   }
+  .dot5{
+    
+    height: 200px;
+    width: 150px;
+  }
   #header {
-    /* width: 100vh; */
+    
     display: inline-block;
     padding: 0px;
   }
@@ -581,7 +603,7 @@ padding: 10px;
     padding: 30px;
   }
   #aboutMe {
-    /* width: 100vh; */
+    
     flex-direction: column-reverse;
   }
   #aboutText {
@@ -597,9 +619,7 @@ padding: 10px;
   .skillsTab {
     font-size:0.8rem;
   }
-  /* .skillsTab {
-    margin: 0 5px;
-  } */
+  
   .headSkills {
     width: 250px;
   }
