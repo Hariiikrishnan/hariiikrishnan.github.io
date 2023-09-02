@@ -171,7 +171,6 @@ html{
   z-index: 1;
   bottom: -30px;
   left: 45%;
-  animation:slideUp 0.3s ease;
 }
 #techs #startup .container .head{
   display: flex;
@@ -187,8 +186,7 @@ html{
   position: absolute;
   z-index: 3;
   left: 25%;
-  animation:slideUp 0.5s ease;
-  animation-delay: 0.3s;
+  
 }
 #techs #startup p{
   color: rgb(169, 169, 169);
@@ -225,12 +223,13 @@ html{
 #techs .techsTitle{
   position: relative;
   padding: 50px;
-
+  opacity:0; 
   
-  animation:slideUp 0.6s linear ;
-  animation-delay: 1s;
+  /* animation:slideUp 0.6s linear ; */
+  /* animation-delay: 1s; */
 }
 #techs .techsTitle .titleText{
+
 }
 
 #techs .techsMERN .techsTitle h1{
@@ -268,19 +267,21 @@ html{
 }
 #techs .techsMERN p{
   margin: 15px 0;
-  animation:slideUp 0.4s ease-in ;
-  animation-delay: 1.4s;
+ 
 }
 #techs .techsMERN h4{
   width: 100%;
   color:white;
   font-size: 1.4rem;
   margin-top:10px;
-  animation:slideUp 0.4s ease-in ;
-  animation-delay: 1.2s;
+  
 }
 #techs .techsMERN p{
+  opacity:0; 
   color: rgb(169, 169, 169);
+}
+#techs .techsMERN h4{
+  opacity:0; 
 }
 #techs .techsMERN h1{
   color: white;
@@ -317,6 +318,7 @@ html{
   transition: font-weight 0.1s linear;
 }
 #techs .techsMERN .mernEntities h4{
+  opacity:1; 
   font-size: 1.2rem;
   width: fit-content;
   background-color: #0048ff;
@@ -327,6 +329,7 @@ html{
     animation:none;
 }
  #techs .techsMERN .mernEntities p{
+  opacity:1; 
   margin:5px 0;
   color: white;
   animation:none;
@@ -335,6 +338,51 @@ html{
   text-decoration: none;
 }
 
+
+
+#techs .techsMERN .topTitle.visible,#projectsIframe .topTitle.visible{
+  opacity:1;
+  animation: slideUp 0.2s ease-in;
+}
+
+#techs .techsTitle.visible{
+  opacity:1;
+  animation: slideUp 0.3s ease-in;
+  animation-delay: 0.07s;
+}
+#techs .techsTitle.visible .svgIcon{
+  opacity:1;
+  animation: slideUp 0.4s ease-in;
+  animation-delay: 0.1s;
+}
+#techs .techsMERN h4.visible{
+  opacity:1;
+  animation: slideUp 0.3s ease-in;
+  animation-delay:0.2s;
+}
+#techs .techsMERN p.visible{
+  opacity:1;
+  animation: slideUp 0.3s ease-in;
+  animation-delay:0.4s;
+}
+
+#techs .techsMERN .mernEntities.visible:nth-child(1){
+  animation: rightIn 0.3s ease-in;
+}
+#techs .techsMERN .mernEntities.visible:nth-child(3){
+  animation: rightIn 0.3s ease-in;
+}
+#techs .techsMERN .mernEntities.visible:nth-child(2){
+  animation: leftIn 0.3s ease-in;
+}
+#techs .techsMERN .mernEntities.visible:nth-child(4){
+  animation: leftIn 0.3s ease-in;
+}
+
+.divider2.visible div{
+  width: 80%;
+  transition: width 0.6s ease-out;      
+}
 
 .barricade1{
   position: absolute;
@@ -375,7 +423,7 @@ html{
 
 
 .divider2 div{
-  width: 80%;
+  width: 0%;
            height: 2px;
            background: #afababa8;
            border-radius: 80px;
@@ -452,6 +500,7 @@ html{
     letter-spacing: 1.1px;
 }
 
+
 #devMoot{
   width: 100%;
   display: flex;
@@ -499,14 +548,25 @@ html{
   width: 100%;
 }
 #footer .container{
-  padding:50px;
+  padding:50px 50px 15px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;background-color: #97959570;
   border-top-left-radius: 80%;
   border-top-right-radius: 80%;
 }
+#footer .container h4{
+  margin:10px;
+}
+#footer .container h4 a{
+  color:  #2196F3;
 
+}
+#footer .container h4 a:hover{
+  color:  #2195f3b0;
+  transition: color 0.1s linearS;
+  /* background-color: ; */
+}
 #footer div{
   display:flex;
   align-items: center;
@@ -525,6 +585,12 @@ html{
   background-color: #ffcc00;
   transition: padding 0.1s linear,background-color 0.1s linear;
 }
+
+
+
+
+
+
 
 
 /* CSS Animations  */
@@ -558,6 +624,8 @@ html{
 
   }
 }
+
+
 @keyframes leftIn {
   0%{
     transform: translateX(30%);
@@ -567,6 +635,18 @@ html{
 
   }
 }
+@keyframes rightIn {
+  0%{
+    transform: translateX(-30%);
+  }
+  100%{
+    transform: translateX(0%);
+
+  }
+}
+
+
+
 @keyframes scaleZoom {
   0%{
     transform: scale(1.9);
@@ -578,11 +658,11 @@ html{
 }
 @keyframes slideUp {
   0% {
-    /* opacity: 0; */
+    opacity: 0;
     transform:translateY(40%);
   }
   100% {
-    /* opacity: 1; */
+    opacity: 1;
     transform:  translateY(0);
   }
 }

@@ -31,9 +31,10 @@ let observer = new IntersectionObserver(updates => {
     console.log(update)
       if (update.isIntersecting) {
           update.target.classList.add('visible');
-      } else {
-          update.target.classList.remove('visible');
       }
+      //  else {
+      //     update.target.classList.remove('visible');
+      // }
   });
 }, { threshold: 0 });
 
