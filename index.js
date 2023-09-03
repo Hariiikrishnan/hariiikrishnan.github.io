@@ -1,7 +1,7 @@
 var element = document.getElementsByClassName("spanHead1");
 var element1 = document.getElementsByClassName("spanHead2");
 var element2 = document.getElementsByClassName("spanHead3");
-console.log(element2);
+// console.log(element2);
 var element3 = document.getElementsByClassName("headerPTag");
 var element4 = document.getElementsByClassName("headButton");
 
@@ -28,7 +28,7 @@ var aboutSection = document.getElementById("whiteAbout");
 
 let observer = new IntersectionObserver(updates => {
   updates.forEach(update => {
-    console.log(update)
+    // console.log(update)
       if (update.isIntersecting) {
           update.target.classList.add('visible');
       }
@@ -41,7 +41,7 @@ let observer = new IntersectionObserver(updates => {
 
 var element8 = document.querySelectorAll(".element");
 // var element10 = document.getElementById("thirdSection");
-console.log(element8)
+// console.log(element8)
 element8.forEach(element =>{
   observer.observe(element);
 })

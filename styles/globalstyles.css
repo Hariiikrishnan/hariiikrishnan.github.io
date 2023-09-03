@@ -82,14 +82,17 @@ html{
   animation: slantingIN 0.3s ease-in;
   animation-delay: 0.7s;
 }
+
 .headerContent p,
 .headerContent h1,
 .headerContent button {
   margin: 20px 0;
 }
+
 .headerContent p {
   color: #ebebeb;
 }
+
 .headerContent button {
   background: #ffeeee40;
   border: solid white 1px;
@@ -98,6 +101,20 @@ html{
   width: 140px;
   color: white;
 }
+.headerContent button:hover{
+  /* background-color: transparent; */
+  /* transition:background-color 0.1s ease-out; */
+  background-color: transparent;
+    color: #ffffff;
+    /* box-shadow: 5px 4px 10px #8a8a8ab8; */
+    box-shadow: 5px 4px 10px #000000b8;
+    transition: color 0.1s linear,background-color 0.1s linear,box-shadow 0.1s linear;
+}
+.headerContent button:hover div{
+  transform:scale(1.1);
+  transition:transform 0.1s ease-out;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -119,32 +136,44 @@ html{
 #whiteAbout{
   background-color: #fff;
   width: 100%;
+  overflow: hidden;
   /* height: 200px; */
 }
 #whiteAbout .aboutContainer{
   padding: 30px;
+  display:flex;
+  flex-direction: column;
+align-items: center;
 }
 #whiteAbout .aboutHeaders{
   border: solid black 1px;
   width: 100px;
   text-align: center;
   border-radius: 10px;
+  margin:30px 0;
+  padding:5px 10px;
 }
 
 #whiteAbout div h1 {
+  opacity: 0;
   color: rgb(0, 0, 0);
+  background-color: white;
+  transform: translateY(-80%) rotate3d(1, 1, 1, 15deg);
 }
 
-#whiteAbout.onLoad{
 
-}
-#whiteAbout.visible div h1 :first-child{
+/* #whiteAbout.visible div h1 :first-child{
   animation: colorChanging 0.9s ease-in ;
   animation-delay: 0.4s;
 }
 #whiteAbout.visible div h1 :last-child{
   animation: colorChanging 0.9s ease-in;
   animation-delay: 0.8s;
+} */
+#whiteAbout.visible div h1 {
+opacity: 1;
+transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
+    transition: transform 0.5s ease-out,opacity 0.4s ease-out;
 }
 
 
@@ -158,6 +187,7 @@ html{
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 
@@ -171,6 +201,7 @@ html{
   z-index: 1;
   bottom: -30px;
   left: 45%;
+  filter: drop-shadow(0px 0px 0px #ffffff);
 }
 #techs #startup .container .head{
   display: flex;
@@ -223,7 +254,7 @@ html{
 #techs .techsTitle{
   position: relative;
   padding: 50px;
-  opacity:0; 
+  /* opacity:0;  */
   
   /* animation:slideUp 0.6s linear ; */
   /* animation-delay: 1s; */
@@ -277,11 +308,11 @@ html{
   
 }
 #techs .techsMERN p{
-  opacity:0; 
+  /* opacity:0;  */
   color: rgb(169, 169, 169);
 }
 #techs .techsMERN h4{
-  opacity:0; 
+  /* opacity:0;  */
 }
 #techs .techsMERN h1{
   color: white;
@@ -303,6 +334,9 @@ html{
   padding:20px;
   border-radius: 7px;
 }
+
+
+
 
 #techs .techsMERN .mernEntities:hover{
   background-color: rgb(55 55 55 / 65%);
@@ -340,30 +374,38 @@ html{
 
 
 
+
+#techs #startup .container .head.visible{
+  animation: slideUp 0.3s ease-in;
+}
+#techs #startup .container p.visible{
+  animation: slideUp 0.3s ease-in;
+}
+
 #techs .techsMERN .topTitle.visible,#projectsIframe .topTitle.visible{
-  opacity:1;
+  /* opacity:1; */
   animation: slideUp 0.2s ease-in;
 }
 
 #techs .techsTitle.visible{
-  opacity:1;
+  /* opacity:1; */
   animation: slideUp 0.3s ease-in;
   animation-delay: 0.07s;
 }
 #techs .techsTitle.visible .svgIcon{
-  opacity:1;
+  /* opacity:1; */
   animation: slideUp 0.4s ease-in;
   animation-delay: 0.1s;
 }
 #techs .techsMERN h4.visible{
-  opacity:1;
+  /* opacity:1; */
   animation: slideUp 0.3s ease-in;
-  animation-delay:0.2s;
+  /* animation-delay:0.2s; */
 }
 #techs .techsMERN p.visible{
-  opacity:1;
+  /* opacity:1; */
   animation: slideUp 0.3s ease-in;
-  animation-delay:0.4s;
+  /* animation-delay:0.4s; */
 }
 
 #techs .techsMERN .mernEntities.visible:nth-child(1){
@@ -378,10 +420,40 @@ html{
 #techs .techsMERN .mernEntities.visible:nth-child(4){
   animation: leftIn 0.3s ease-in;
 }
-
+.divider.visible {
+  /* opacity: 1; */
+ 
+  width:100%;
+  transition: width 0.3s ease-out;
+}
 .divider2.visible div{
   width: 80%;
   transition: width 0.6s ease-out;      
+}
+
+#projectsIframe .container.visible{
+  animation: zoomIn 0.2s ease-out;
+}
+
+#projectsIframe .head.visible{
+  animation: slideUp 0.2s ease-in;
+}
+
+
+#techs #startup .svgicon.visible{
+  filter: drop-shadow(1px 2px 25px #ffffff);
+  transition: filter 0.9s ease-out;
+}
+
+#devMoot.visible button{
+  transform:translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+#devMoot .mootTitle.visible{
+  opacity: 1;;
+  transform:translateX(0);
+  transition: transform 0.3s ease-in-out , opacity 0.3s ease-out;
+ transition-delay: 0.4s;
 }
 
 .barricade1{
@@ -412,7 +484,11 @@ html{
 
 
 
-
+.divider{
+  /* opacity: 0; */
+  position: relative;
+  width:0%;
+}
 
 .divider2{
   width: 100%;
@@ -446,6 +522,7 @@ html{
   font-size: 1.8rem;
 }
 #projectsIframe .projects{
+  margin:20px 0; 
   display:flex;
   flex-wrap: wrap;
   align-items: center;
@@ -500,6 +577,11 @@ html{
     letter-spacing: 1.1px;
 }
 
+#devMoot button{
+
+  transform:translateX(-100%);
+  
+}
 
 #devMoot{
   width: 100%;
@@ -507,10 +589,13 @@ html{
   flex-wrap: wrap;
   align-items: center;
     justify-content: space-evenly;
-    padding: 60px 0
+    padding: 60px 0;
 }
 #devMoot .mootTitle{
   /* width: 40%; */
+  opacity:0;
+  transform:translateX(-100%);
+  
 }
 #devMoot .mootTitle h3,#devMoot .mootTitle h5{
   margin:10px 0;
@@ -536,22 +621,30 @@ html{
 }
 
 #devMoot button:hover{
-  background-color: #8a8a8a84;
+  /* background-color: #8a8a8a84; */
+  padding:10px 60px;
+  background-color: #ffe270;
   color:#ffffff;
   box-shadow:  5px 5px 0px #000000;
-  transition: color 0.1s linear,background-color 0.1s linear,box-shadow 0.1s linear;
+  transition: color 0.1s linear,background-color 0.1s linear,box-shadow 0.1s linear, padding 0.1s linear ;
 }
 
 
 
 #footer{
   width: 100%;
+  /* height:0;
+  overflow: hidden; */
 }
 #footer .container{
+  /* height:0;
+  overflow: hidden; */
+
+
   padding:50px 50px 15px 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;background-color: #97959570;
+  align-items: center;background-color: #97959526;
   border-top-left-radius: 80%;
   border-top-right-radius: 80%;
 }
@@ -567,7 +660,7 @@ html{
   transition: color 0.1s linearS;
   /* background-color: ; */
 }
-#footer div{
+#footer .iconsContainer{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -586,9 +679,20 @@ html{
   transition: padding 0.1s linear,background-color 0.1s linear;
 }
 
+/* .wrapper{
+  display:grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0.2s; 
+} 
 
-
-
+ .wrapper.visible{
+  grid-template-rows: 1fr;
+}
+#footer.visible{
+  height:100%;
+  transition: height 0.3s linear;
+} */
 
 
 
@@ -647,9 +751,10 @@ html{
 
 
 
-@keyframes scaleZoom {
+
+@keyframes zoomIn {
   0%{
-    transform: scale(1.9);
+    transform: scale(0);
   }
   100%{
     transform: scale(1);
@@ -691,6 +796,13 @@ html{
   /* #techs{
     border-radius: 100% / 4%;
   } */
+
+  #whiteAbout .aboutContainer{
+    padding:30px 10px;
+  }
+  #whiteAbout .aboutContainer .aboutContent{
+    width:80%;
+  }
 #techs #startup .container .head h3{
   font-size: 1.7rem;
   left: 0%;
@@ -707,8 +819,17 @@ html{
   width: 85%;
 }
 
+/* #devMoot .mootTitle{
+  width: 40%;
+  transform:translateX(-140%);
+  
+} */
+
 #footer .container{
   border-top-left-radius: 25%;
   border-top-right-radius: 25%;
 }
+#footer .smIcons{
+  margin:15px;
+ }
 }
