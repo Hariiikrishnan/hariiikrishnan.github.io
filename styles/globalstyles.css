@@ -120,17 +120,18 @@ nav .sideBarMenu ul{
 }
 nav .sideBarMenu ul li{
   margin:20px 0;
-  font-size: 20px;
-  font-weight: 900;
-  background: white;
-    padding: 5px;
-    border-radius: 10px;
-    width:200px;
-    text-align: center;
-    
+  text-align: center;
+  
 }
 
 nav .sideBarMenu ul li a{
+  display:block;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 5px;
+  border-radius: 10px;
+  width:200px;
+  background: white;
   color:black;
 }
 
