@@ -9,9 +9,142 @@ html{
   scroll-behavior: smooth;
   
 }
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+ul{
+  margin:0;
+  padding: 0;
+}
+
+
+
+/* Navbar Styling */
+
+nav{
+  display:flex;
+ align-items: center;
+ justify-content: space-evenly;
+ background-color: black;
+ color:white;
+ width:100%;
+ padding:30px 0;
+}
+nav .logo img{
+  height:40px;
+}
+nav .menu ul{
+  display: flex;
+ 
+}
+nav .menu ul li,nav .sideBarMenu ul li{
+  margin:0 10px;
+  position: relative;
+  
+}
+nav .menu ul li:before,nav .sideBarMenu ul li:before{
+  content:"";
+  position: absolute;
+  bottom:-10px;
+  height:3px;
+  width:0;
+  background-color:white;
+  border-radius: 50px;
+  transition:width 0.3s ease;
+}
+
+nav .sideBarMenu ul li:before{
+
+left:0px;
+}
+nav .menu ul li:hover:before,nav .sideBarMenu ul li:hover:before{
+  width:100%;
+}
+
+nav .sideBar{
+  display:none;
+}
+nav button{
+  background:transparent;
+  border:none;
+  color:white;
+  font-size: 25px;
+}
+nav .sideBarMenu button{
+  font-size: 40px;
+  width:50px;
+  text-align: center;
+}
+
+nav .sideBarMenu button:hover{
+  background-color: white;
+  border-radius: 10px;
+  color:black;
+  
+  /* padding:0 10px; */
+  transition: background-color 0.3s ease ;
+}
+
+
+nav .sideBarMenu{
+  display:none;
+  background-color: #0000005c;
+    color: black;
+    height: 100vh;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index:99999;
+    /* transform: translateX(100%); */
+    
+    /* transition: 0.5s ease; */
+}
+nav .sideBarMenu.show{
+  display:block;
+}
+nav .sideBarMenu ul{
+  height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+nav .sideBarMenu ul li{
+  margin:20px 0;
+  font-size: 20px;
+  font-weight: 900;
+  background: white;
+    padding: 5px;
+    border-radius: 10px;
+    width:200px;
+    text-align: center;
+    
+}
+
+
+/* Hamburger menu */
+/* input[type=checkbox] {
+  display: none;
+} */
+
+/* .hamburger-menu {
+  display: none;
+  font-size: 20px;
+  user-select: none;
+} */
+
+
 /* Header Section Styles */
 .headerContainer {
-  height: 100vh;
+  height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +183,7 @@ html{
   text-align: center;
   z-index: 5;
   width: 80%;
+  margin-bottom: 80px;
 }
 .headerContent h1 {
   font-size: 3rem;
@@ -98,8 +232,12 @@ html{
   border: solid white 1px;
   border-radius: 30px;
   height: 50px;
-  width: 140px;
+  width: 150px;
   color: white;
+  transition: color 0.1s linear,background-color 0.1s linear,box-shadow 0.1s linear;
+}
+.headerContent button svg{
+  margin:0 5px;
 }
 .headerContent button:hover{
   /* background-color: transparent; */
@@ -108,7 +246,7 @@ html{
     color: #ffffff;
     /* box-shadow: 5px 4px 10px #8a8a8ab8; */
     box-shadow: 5px 4px 10px #000000b8;
-    transition: color 0.1s linear,background-color 0.1s linear,box-shadow 0.1s linear;
+   
 }
 .headerContent button:hover div{
   transform:scale(1.1);
@@ -152,6 +290,10 @@ align-items: center;
   border-radius: 10px;
   margin:30px 0;
   padding:5px 10px;
+}
+
+#whiteAbout .aboutContainer .aboutContent{
+  width:70%;
 }
 
 #whiteAbout div h1 {
@@ -446,14 +588,15 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
 }
 
 #devMoot.visible button{
-  transform:translateX(0);
-  transition: transform 0.3s ease-in-out;
+  /* transform:translateX(0); */
+  /* transition: transform 0.3s ease-in-out; */
+  animation: fullSlideLeft 0.3s ease-in-out;
 }
 #devMoot .mootTitle.visible{
   opacity: 1;;
   transform:translateX(0);
   transition: transform 0.3s ease-in-out , opacity 0.3s ease-out;
- transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .barricade1{
@@ -565,6 +708,14 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
   border-radius: 20px;
   border:solid black 2px;
 }
+
+#projectsIframe .btnContainer button:hover{
+  color:white;
+  background-color: black;
+  transition:color 0.1s ease,background-color 0.1s ease;
+}
+
+
 #techs .techsMERN .topTitle,#projectsIframe .topTitle{
   color: white;
     background-color: #ffeeee40;
@@ -579,7 +730,7 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
 
 #devMoot button{
 
-  transform:translateX(-100%);
+  /* transform:translateX(-100%); */
   
 }
 
@@ -618,6 +769,7 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
     font-weight: 800;
     padding: 10px 0;
     border: solid black 2px;
+    transition: color 0.1s linear,background-color 0.1s linear,box-shadow 0.1s linear, padding 0.1s linear !important;
 }
 
 #devMoot button:hover{
@@ -626,7 +778,7 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
   background-color: #ffe270;
   color:#ffffff;
   box-shadow:  5px 5px 0px #000000;
-  transition: color 0.1s linear,background-color 0.1s linear,box-shadow 0.1s linear, padding 0.1s linear ;
+  
 }
 
 
@@ -672,11 +824,12 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
 }
 #footer .smIcons svg {
   border-radius: 10px;
+  transition: padding 0.1s linear,background-color 0.1s linear;
 }
 #footer .smIcons:hover svg{
   padding: 5px;
   background-color: #ffcc00;
-  transition: padding 0.1s linear,background-color 0.1s linear;
+ 
 }
 
 /* .wrapper{
@@ -784,11 +937,74 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
   }
 }
 
+@keyframes fullSlideIn {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+}
+@keyframes fullSlideLeft {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+}
+@keyframes fullSlideOut {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+  
+}
 
 
 
 /* Mobile Sized Media Query */
 @media only screen and (max-width: 768px){
+
+  nav{
+    justify-content: space-around;
+  }
+
+  nav .menu{
+    display:none;
+  }
+
+  nav .sideBar{
+    display:block;
+  }
+
+  nav .sideBarMenu{
+    /* transform: translateX(100%); */
+    /* transition: transform 0.5s ease; */
+  }
+  nav .sideBarMenu.show{
+    /* transform: translateX(0); */
+    animation: fullSlideIn 0.5s ease;
+  }
+  nav .sideBarMenu.close{
+    animation: fullSlideOut 0.5s ease;
+  }
+  
+
+  /* input[type=checkbox]:checked ~ .menu {
+    display: block;
+} */
+
+.hamburger-menu {
+    display: block;
+    margin-bottom: 3px;
+}
+
+
   .headerContent h1 {
     font-size: 2rem;
   }
