@@ -300,7 +300,7 @@ align-items: center;
   opacity: 0;
   color: rgb(0, 0, 0);
   background-color: white;
-  transform: translateY(-80%) rotate3d(1, 1, 1, 15deg);
+  transform: translateY(-80%) rotate3d(1, 1, 1, 05deg);
 }
 
 
@@ -1016,6 +1016,12 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
   #whiteAbout .aboutContainer{
     padding:30px 10px;
   }
+
+  #whiteAbout div h1 {
+
+    transform: translateY(-80%) rotate3d(1, 1, 1, 15deg);
+  }
+
   #whiteAbout .aboutContainer .aboutContent{
     width:80%;
   }
