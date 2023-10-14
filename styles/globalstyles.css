@@ -694,7 +694,7 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
 
 #projectsIframe .container{
   background-color: whitesmoke;
-  padding:20px;
+  padding:0 0 15px 0;
   border-radius: 24px;
   margin:10px 0;
 }
