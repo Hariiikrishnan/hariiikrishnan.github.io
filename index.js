@@ -1,3 +1,7 @@
+
+
+
+
 var element = document.getElementsByClassName("spanHead1");
 var element1 = document.getElementsByClassName("spanHead2");
 var element2 = document.getElementsByClassName("spanHead3");
