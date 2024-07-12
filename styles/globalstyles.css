@@ -195,7 +195,7 @@ nav .sideBarMenu ul li a{
   color: #fff;
   text-align: center;
   z-index: 5;
-  width: 80%;
+  width: 90%;
   margin-bottom: 80px;
 }
 .headerContent h1 {
@@ -690,7 +690,8 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
   height: 300px;
   /* margin:0 15px; */
   border:none;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
 }
 #projectsIframe .iframe2{
   /* width: 110%; */
@@ -1019,7 +1020,7 @@ transform: translateY(0%) rotate3d(0, 0, 0, 0deg);
 
 
   .headerContent h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   /* #techs{
